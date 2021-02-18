@@ -1,0 +1,18 @@
+import java.util.*
+import kotlin.math.pow
+
+fun main(args: Array<String>) {
+    val scanner = Scanner(System.`in`)
+    val a = scanner.nextInt()
+    val b = scanner.nextInt()
+    val c = scanner.nextInt()
+    val d = scanner.nextInt()
+
+   for (x in 1.. 1000){
+       val res = a * x.toDouble().pow(3) + b * x.toDouble().pow(2) + c * x + d
+
+       if (res == 0.toDouble())
+           println(x)
+   }
+
+}
